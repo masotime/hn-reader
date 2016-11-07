@@ -1,6 +1,6 @@
 {
   "name": "hn-reader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Yet another HackerNews reader",
   "main": "src/index.js",
   "private": true,
