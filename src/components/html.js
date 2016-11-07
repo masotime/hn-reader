@@ -14,6 +14,7 @@ export default class Html extends Component {
 		return (
 			<html>
 				<head>
+					<meta charSet="utf-8" />
 					<link rel="stylesheet" href={STYLESHEET_PATHNAME} />
 					<title>{title}</title>
 				</head>

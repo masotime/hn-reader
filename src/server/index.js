@@ -24,8 +24,8 @@ app.use(bundler());
 
 app.get('/', guard(async (req, res) => {
 	const model = {
-		title: 'hn-reader',
-		message: 'Hello Benjamin Goh &lt;masotime@gmail.com&gt;!'
+		title: 'Yet another Hacker News reader',
+		message: 'Click an article on the left to view it'
 	};
 
 	const stories = await getStories();
