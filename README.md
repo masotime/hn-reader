@@ -12,5 +12,10 @@ This module also serves as a basis of work on [generator-maso][generator-maso-ur
 
 Clicking on an entry in the sidebar hits the server and tries to parse the HTML at the URL related to the item. If `MERCURY_API_KEY` is present in `process.env`, it makes the appropriate API call, otherwise it uses [node-readability][node-readability-url] to do the parsing.
 
+## Universal musings
+
+* Make sure you set the `<meta charset="utf">` in the html `<head>`, or Universal rendering will bork on reading the JSON state if it has utf-8 characters.
+* Formatting time may not be universal - server timezone may not be in sync with client timezone.
+
 [generator-maso-url]: https://npmjs.org/generator-maso
 [node-readability-url]: https://npmjs.org/node-redability
