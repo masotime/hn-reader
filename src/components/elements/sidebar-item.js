@@ -12,7 +12,7 @@ export default class SidebarItem extends Component {
 			<div className="sidebar-item" onClick={() => display(id)}>
 				<span className="type">{type}</span>
 				<span className="author">{by}</span>
-				<span className="time">{moment(time).utcOffset('-0800').format('ddd MMM D HH:mm:ss a')}</span>
+				<span className="time">{moment(time).utcOffset('-0900').format('ddd MMM D HH:mm:ss a')}</span>
 				<div className="item-stats">
 					<span className="score">{score}</span>
 					<span className="comment-count">{commentCount}</span>
