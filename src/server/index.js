@@ -52,4 +52,4 @@ app.get('/article/:id', guard(async (req, res) => {
 	}
 }));
 
-app.listen(PORT, () => console.log(`✅  Web server started at http://localhost:${PORT}`));
+app.listen(process.env.PORT || PORT, () => console.log(`✅  Web server started at http://localhost:${PORT}`));
