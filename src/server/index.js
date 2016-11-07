@@ -18,6 +18,7 @@ import { join } from 'path';
 import { getStories, getItem, getArticle } from 'server/data-access';
 
 const app = express();
+const port = process.env.PORT || PORT;
 
 app.use('/static', express.static(join(process.cwd(), 'static')));
 app.use(bundler());
@@ -52,4 +53,4 @@ app.get('/article/:id', guard(async (req, res) => {
 	}
 }));
 
-app.listen(process.env.PORT || PORT, () => console.log(`✅  Web server started at http://localhost:${PORT}`));
+app.listen(port, () => console.log(`✅  Web server started at http://localhost:${port}`));
